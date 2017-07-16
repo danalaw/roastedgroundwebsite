@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--Added this viewport. W3schools. It creates more responsiveness.-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+<script src="../js/contactpage.js"></script>
+<title>Roasted Ground Contact</title>
+</head>
+
+<body>
+<nav>
+  <ul class="navtop">
+    <li class="navtoplist"><a class="navtoplink" href="../index.html">Roasted Ground Coffee</a></li>
+    <li class="navtoplist"><a class="navtoplink" href="productpage.html">Products</a></li>
+    <li class="navtoplist"><a class="navtoplink" href="aboutpage.html">About</a></li>
+    <li class="navtoplist"><a class="active" href="contactpage.html">Contact</a></li>
+    <li class="navtoplist"><a class="navtoplink" href="javascript:void(0);">Blog</a></li>
+    <li class="navtoplist"><a class="navtoplink" href="javascript:void(0);">FAQ</a></li>
+    <li class="navtoplist">
+      <form class="navtopsearch">
+        <input type="search" onsearch="searchFunction()" id="searched" placeholder="Looking for something?">
+      </form>
+    </li>
+  </ul>
+</nav>
+<div class="parallax"></div>
+<div class="featureimage"> <img src="../images/contactpageimages/contact_us.jpg" width="960" height="300" alt=""/> </div>
+<section>
+ <!--This is the contact form.-->
+  <div class="contactform">
+    <form >
+      <input onfocusin="focuscolor(this);" onfocusout="unfocuscolor(this);" type="text" id="namefield" placeholder="Enter your gorgeous name here!"/>
+      <p id="nameValidationTag"></p>
+      <input onfocusin="focuscolor(this);" onfocusout="unfocuscolor(this);" type="email" id="emailfield" placeholder="What's your email?"/>
+      <p id="emailValidationTag"></p>
+      <textarea onfocusin="focuscolor(this);" onfocusout="unfocuscolor(this);" id="messagefield" placeholder="Message us! We'd love to hear from you!" rows="10" cols="30"></textarea>
+      <p id="messageValidationTag"></p>
+      <input type="checkbox" id="checkboxfield"/>
+      Check here to unsubscribe from Daily Coffee News!<br>
+      <p id="checkboxValidationTag"></p>
+      <select id="faves">
+        <option>Select your favorite coffee!</option>
+        <option>Latte</option>
+        <option>Espresso</option>
+        <option>Cold Brew</option>
+        <option>I don't like coffee</option>
+      </select>
+      <p id="favesValidationTag"></p>
+      <input type="button" value="Submit" onclick="nameValidator();emailValidator();messageValidator();checkboxChecked();favesChecked();"/>
+    </form>
+  </div>
+</section>
+<div class="parallax"></div>
+
+<!-- Adding a Google maps in here just because the page was looking a bit bare. Getting the maps was simple embedding a link. -->
+
+<section class="googlemaps">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d38106.57673993944!2d-6.2903158!3d53.3493235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1482061061672" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
+<footer>
+  <ul class="footnav">
+    <li class="footnavlist"><a class="footnavlink" href="aboutpage.html">About</a></li>
+    <li class="footnavlist"><a class="footnavlink" href="contactpage.html">Contact</a></li>
+    <li class="footnavlist"><a class="footnavlink" href="javascript:void(0);">Dana Law &#9749</a></li>
+    <li class="footnavlist"><a class="footnavlink" href="https://www.facebook.com/pages/Coffee/103758506330178?fref=ts;"><img src="../images/homepageimages/fb_icon.png" width="20" height="20" alt=""/></a></li>
+    <li class="footnavlist"><a class="footnavlink" href="https://twitter.com/coffee_dad?lang=en"><img src="../images/homepageimages/twitter_icon.jpg" width="20" height="20" alt=""/></a></li>
+  </ul>
+</footer>
+</body>
+</html>

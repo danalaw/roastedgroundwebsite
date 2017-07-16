@@ -1,0 +1,347 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #ffebd8;
+}
+/*Parallax scrolling tutorial taken from W3schools. Changed sizing and images to suit the site. URL in report.*/ 
+.parallax {
+	background-image: url(../images/homepageimages/parallax_bg_5.jpg);
+	min-height: 150px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*Navigation bar.*/
+.navtop {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #422100;
+}
+.navtoplist {
+	float: left;
+	border-right: 1px solid white;
+}
+/*This is to style the links. */
+.navtoplink {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 20px;
+}
+/*This is to change the link colors when hovered. .active is to show what page user is currently on.*/
+.navtoplink:hover {
+	background-color: #996633;
+}
+.active {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 20px;
+	background-color: #966a3d;
+}
+.navtopsearch {
+	width: 100%;
+	padding: 10px 10px 10px 10px;
+}
+/*This is to style the feature/welcome image in the middle and have it change on hover. Properties and concepts learned from codeacademy/W3schools.*/
+
+.featureimage {
+	margin: 30px;
+	border: none;
+	max-width: 100%;
+	height: auto;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+.featuregallery {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.featuregalleryimage {
+	margin: 20px;
+	position: relative;
+}
+.featuregalleryimageborder {
+	border: ridge white;
+}
+/*Just to add some dynamism so the images kind of pop up when you hover over it.*/
+
+.featuregalleryimage:hover {
+	bottom: 25px;
+	box-shadow: 15px 15px 5px #C19C6E;
+}
+/*Nearly same styling as the top nav bar.*/
+.footnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #663300;
+}
+.footnavlist {
+	float: left;
+	border-right: 1px solid white;
+}
+.footnavlink {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 35px 35px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 20px;
+}
+.footnavlink:hover {
+	background-color: #996633;
+}
+/*Using a W3schools tutorial on popups for a little "fun fact" thing in the footer. URL in report. I had to completely take the code apart because they only used libraries to style so I had to create a "good" looking one without libraries.*/
+.coffeepopup {
+	position: relative;
+	display: flex;
+	cursor: help;
+	border: thick white;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, " sans-serif";
+	font-size: 40px;
+	margin: 30px;
+	max-width: 100%;
+	height: auto;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+/* This is for the popup. */
+.coffeepopup .coffeepopuptext {
+	visibility: hidden;
+	width: 300px;
+	background-color: forestgreen;
+	font-family: Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, " sans-serif";
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -150px;
+}
+/*This is to provide a bordered background for the pop-up. URL link to tutorial in report. I changed the CSS around and made it a picture. */
+.coffeepopupbg {
+	background: url(../images/homepageimages/box_beans_dark.jpg);
+	margin: 50px;
+	padding: 25px;
+	position: relative;
+}
+.coffeepopupbg:before {
+	border: 5px dotted white;
+	content: "";
+	position: absolute;
+	top: -15px;
+	bottom: -15px;
+	left: -15px;
+	right: -15px;
+}
+/* This is the tiny little popup arrow under the popup */
+.coffeepopup .coffeepopuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+/* This is for the toggle */
+.coffeepopup .show {
+	visibility: visible;
+}
+/*Contact Page css starts here*/
+/*Contact form styling*/
+.contactform {
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px;
+	border: 5px ridge white;
+	text-align: center;
+	padding: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-family: Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, " sans-serif";
+	background-color: darkseagreen;
+}
+/*Styling for all the input fields*/
+.contactform input[type="text"], .contactform input[type="email"], .contactform input[type="button"], .contactform textarea {
+	width: 100%;
+}
+/*This is for the embedded Google map*/
+.googlemaps {
+	margin: 30px;
+	border: none;
+	max-width: 100%;
+	height: auto;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+/*Product Page css starts here*/
+
+.productbuttons {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+/*Followed a tutorial to make click button for more oomph. URL link in report.*/
+.productbuttons input[type="button"] {
+	border: none;
+	background-color: #A6A15E;
+	padding: 15px 25px;
+	font-size: 24px;
+	text-align: center;
+	color: white;
+	border-radius: 15px;
+	outline: none;
+	box-shadow: 0 9px #84894A;
+	cursor: pointer;
+}
+.productbuttons input[type="button"]:hover {
+	background-color: #84894A;
+}
+.productbuttons input[type="button"]:active {
+	background-color: #84894A;
+	box-shadow: 0 5px grey;
+	transform: translateY(4px);
+}
+/*Styling the product gallery. Similar to the home page one.*/
+.productgallery {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.productgalleryimages {
+	margin: 20px;
+	position: relative;
+}
+.productgalleryimages:hover {
+	bottom: 25px;
+}
+.productprice {
+	color: 422100;
+	text-align: justify;
+	width: 300px;
+	font-family: Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, " sans-serif";
+	font-size: 25px;
+}
+/*About Page css starts here*/
+/*Styling the testimonial area*/
+.testimonial {
+	margin: 30px;
+	border: none;
+	max-width: 100%;
+	height: auto;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, " sans-serif";
+}
+.testimonialheader {
+	color: saddlebrown;
+	font-size: 50px;
+}
+.testimonialtype {
+	margin: 30px;
+	border: none;
+	max-width: 100%;
+	height: auto;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, " sans-serif";
+}
+.testimonialtypestyle {
+	color: saddlebrown;
+	font-size: 30px;
+}
+/*Adding style to the quotation mark in the span*/
+.testimonialquotation {
+	font-size: 50px;
+	color: sandybrown;
+}
+/*This is to style the testimonial button*/
+.testimonialchange {
+	margin: 30px;
+	border: none;
+	max-width: 100%;
+	height: auto;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, " sans-serif";
+}
+.testimonialchange input[type="button"] {
+	border: none;
+	background-color: forestgreen;
+	padding: 15px 25px;
+	font-size: 24px;
+	text-align: center;
+	color: white;
+	border-radius: 15px;
+	outline: none;
+	box-shadow: 0 9px darkgray;
+	cursor: pointer;
+}
+.testimonialchange input[type="button"]:hover {
+	background-color: darkgreen;
+}
+.testimonialchange input[type="button"]:active {
+	background-color: darkgreen;
+	box-shadow: 0 5px grey;
+	transform: translateY(4px);
+}
+/*This is to style the lorem ipsum text part*/
+.aboutusheader {
+	color: saddlebrown;
+	font-size: 50px;
+	margin: 30px;
+	border: none;
+	max-width: 100%;
+	height: auto;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, " sans-serif";
+}
+.aboutustext {
+	color: saddlebrown;
+	background-color: #FFF6ED;
+	font-size: 20px;
+	margin: 30px;
+	border: none;
+	max-width: 100%;
+	height: auto;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, " sans-serif";
+}

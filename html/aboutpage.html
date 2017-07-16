@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--Added this viewport. W3schools. It creates more responsiveness.-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
+<script src="../js/aboutpage.js"></script>
+<title>Roasted Ground About Us</title>
+</head>
+<!-- An onload event so that a testimonial will appear on load-->
+<body onload="runPrintRandomTestimonial();">
+<nav>
+  <ul class="navtop">
+    <li class="navtoplist"><a class="navtoplink" href="../index.html">Roasted Ground Coffee</a></li>
+    <li class="navtoplist"><a class="navtoplink" href="productpage.html">Products</a></li>
+    <li class="navtoplist"><a class="active" href="aboutpage.html">About</a></li>
+    <li class="navtoplist"><a class="navtoplink" href="contactpage.html">Contact</a></li>
+    <li class="navtoplist"><a class="navtoplink" href="javascript:void(0);">Blog</a></li>
+    <li class="navtoplist"><a class="navtoplink" href="javascript:void(0);">FAQ</a></li>
+    <li class="navtoplist">
+      <form class="navtopsearch">
+        <input type="search" onsearch="searchFunction()" id="searched" placeholder="Looking for something?">
+      </form>
+    </li>
+  </ul>
+</nav>
+<div class="parallax"></div>
+<div class="featureimage"> <img src="../images/aboutusimages/about_feature.jpg" width="960" height="300" alt=""/> </div>
+<section>
+  <div class="testimonial">
+    <h2 class="testimonialheader">Featured Testimonial</h2>
+  </div>
+  <!--This is the testimonial part. I added a span that had quotation marks, and an animated button that ran onclick to bring in the testimonial function.-->
+  <div class="testimonialtype"> <span class="testimonialquotation">&quot;</span>
+    <p class="testimonialtypestyle" id="testimonialarray"></p>
+    <span class="testimonialquotation">&quot;</span> </div>
+  <div class="testimonialchange">
+    <input type="button" value="Click to see another testimonial!" onclick="runPrintRandomTestimonial();"/>
+  </div>
+</section>
+<div class="parallax"></div>
+<section>
+  <h2 class="aboutusheader">Our Story</h2>
+  <div class="aboutustext">
+    <p>Lorem ipsum dolor sit amet, brute scribentur et eam, mundi abhorreant vim id, pro saepe disputationi ea. Pro id elit impetus albucius, at mel probo nominati. Inani dolore nam et, luptatum volutpat mel ne, est no sale augue gubergren. An albucius rationibus consequuntur vix, mundi congue appellantur cum eu. Ut efficiendi eloquentiam nec. Agam virtute numquam an nam, inani putent persequeris ad eam.</p>
+    <p>Euismod vivendum mei id. Vis timeam singulis efficiendi ne, doming appetere deseruisse ut sea, detracto verterem efficiendi mea no. Magna repudiandae sea cu. Ex est tota liber, id error choro interesset per, pri alia consectetuer definitiones et. Quo ex quaerendum appellantur, ne commodo electram usu. Utroque salutatus ei mel.</p>
+  </div>
+</section>
+<div class="parallax"></div>
+<footer>
+  <ul class="footnav">
+    <li class="footnavlist"><a class="footnavlink" href="aboutpage.html">About</a></li>
+    <li class="footnavlist"><a class="footnavlink" href="contactpage.html">Contact</a></li>
+    <li class="footnavlist"><a class="footnavlink" href="javascript:void(0);">Dana Law &#9749</a></li>
+    <li class="footnavlist"><a class="footnavlink" href="https://www.facebook.com/pages/Coffee/103758506330178?fref=ts;"><img src="../images/homepageimages/fb_icon.png" width="20" height="20" alt=""/></a></li>
+    <li class="footnavlist"><a class="footnavlink" href="https://twitter.com/coffee_dad?lang=en"><img src="../images/homepageimages/twitter_icon.jpg" width="20" height="20" alt=""/></a></li>
+  </ul>
+</footer>
+</body>
+</html>

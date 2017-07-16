@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--Added this viewport. W3schools. It creates more responsiveness.-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
+<script src="../js/productpage.js"></script>
+<title>Roasted Ground Products</title>
+</head>
+
+<!-- Onload the European prices as the page loads. Can change the currency of prices depending on button pressed. -->
+
+<body onload="writePrices(eurArray);">
+<nav>
+  <ul class="navtop">
+    <li class="navtoplist"><a class="navtoplink" href="../index.html">Roasted Ground Coffee</a></li>
+    <li class="navtoplist"><a class="active" href="productpage.html">Products</a></li>
+    <li class="navtoplist"><a class="navtoplink" href="aboutpage.html">About</a></li>
+    <li class="navtoplist"><a class="navtoplink" href="contactpage.html">Contact</a></li>
+    <li class="navtoplist"><a class="navtoplink" href="javascript:void(0);">Blog</a></li>
+    <li class="navtoplist"><a class="navtoplink" href="javascript:void(0);">FAQ</a></li>
+    <li class="navtoplist">
+      <form class="navtopsearch">
+        <input type="search" onsearch="searchFunction()" id="searched" placeholder="Looking for something?">
+      </form>
+    </li>
+  </ul>
+</nav>
+<div class="parallax"></div>
+<!-- Make a few curreny buttons with onclick events to bring in the arrays -->
+<section>
+  <div class="featureimage"> <img src="../images/productpageimages/product_feature.jpg" width="960" height="300" alt=""/> </div>
+  <div class="productbuttons">
+    <input type="button" value="Click for USD $$ Prices!" onclick="writePrices(usdArray);"/>
+    <input type="button" value="Click for EURO €€ Prices!" onclick="writePrices(eurArray);"/>
+    <input type="button" value="Click for GBP ££ Prices!" onclick="writePrices(gbpArray);"/>
+  </div>
+  <!--All the product figures.-->
+  <div class="productgallery">
+    <figure class="productgalleryimages"> <img src="../images/productpageimages/banana_stand.jpg" width="300" height="300" alt=""/> </figure>
+    <p class="productprice" id="product-0"></p>
+    <figure class="productgalleryimages"> <img src="../images/productpageimages/bojack.jpg" width="300" height="300" alt=""/> </figure>
+    <p class="productprice" id="product-1"></p>
+    <figure class="productgalleryimages"> <img src="../images/productpageimages/bonnie_barko.jpg" width="300" height="300" alt=""/> </figure>
+    <p class="productprice" id="product-2"></p>
+    <figure class="productgalleryimages"> <img src="../images/productpageimages/blonde_ambition.jpg" width="300" height="300" alt=""/> </figure>
+    <p class="productprice" id="product-3"></p>
+    <figure class="productgalleryimages"> <img src="../images/productpageimages/dead_dove.jpg" width="300" height="300" alt=""/> </figure>
+    <p class="productprice" id="product-4"></p>
+    <figure class="productgalleryimages"> <img src="../images/productpageimages/cellar_door.jpg" width="300" height="300" alt=""/> </figure>
+    <p class="productprice" id="product-5"></p>
+    <figure class="productgalleryimages"> <img src="../images/productpageimages/daisy_dukes.jpg" width="300" height="300" alt=""/> </figure>
+    <p class="productprice" id="product-6"></p>
+    <figure class="productgalleryimages"> <img src="../images/productpageimages/loose_seal.jpg" width="300" height="300" alt=""/> </figure>
+    <p class="productprice" id="product-7"></p>
+    <figure class="productgalleryimages"> <img src="../images/productpageimages/rose_glasses.jpg" width="300" height="300" alt=""/> </figure>
+    <p class="productprice" id="product-8"></p>
+  </div>
+</section>
+<div class="parallax"></div>
+<footer>
+  <ul class="footnav">
+    <li class="footnavlist"><a class="footnavlink" href="aboutpage.html">About</a></li>
+    <li class="footnavlist"><a class="footnavlink" href="contactpage.html">Contact</a></li>
+    <li class="footnavlist"><a class="footnavlink" href="javascript:void(0);">Dana Law &#9749</a></li>
+    <li class="footnavlist"><a class="footnavlink" href="https://www.facebook.com/pages/Coffee/103758506330178?fref=ts;"><img src="../images/homepageimages/fb_icon.png" width="20" height="20" alt=""/></a></li>
+    <li class="footnavlist"><a class="footnavlink" href="https://twitter.com/coffee_dad?lang=en"><img src="../images/homepageimages/twitter_icon.jpg" width="20" height="20" alt=""/></a></li>
+  </ul>
+</footer>
+</body>
+</html>

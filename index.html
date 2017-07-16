@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--Everything was learned from either class or W3schools. All links and references in report. If I followed a tutorial very closely, I will note/emphasize it.-->
+
+<!--Added this viewport. From W3schools. It creates more responsiveness. Added/linked my stylesheet, favicon, and javascript.-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+<script src="js/homepage.js"></script>
+<title>Roasted Ground</title>
+</head>
+
+<body>
+
+<!--Navigation bar. Put in some undefined links to represent upcoming pages (blog and FAQ). Colors change when hovered/or on the active page, made from CSS styling to make them more dynamic.-->
+
+<nav>
+  <ul class="navtop">
+    <li class="navtoplist"><a class="active" href="index.html">Roasted Ground Coffee</a></li>
+    <li class="navtoplist"><a class="navtoplink" href="html/productpage.html">Products</a></li>
+    <li class="navtoplist"><a class="navtoplink" href="html/aboutpage.html">About</a></li>
+    <li class="navtoplist"><a class="navtoplink" href="html/contactpage.html">Contact</a></li>
+    <li class="navtoplist"><a class="navtoplink" href="javascript:void(0);">Blog</a></li>
+    <li class="navtoplist"><a class="navtoplink" href="javascript:void(0);">FAQ</a></li>
+    <li class="navtoplist"> 
+      <!--Put an event handler here where when you search for something, there is an alert box telling you that the search box is out of order as well as returning the value of what you searched.-->
+      <form class="navtopsearch">
+        <input type="search" onsearch="searchFunction()" id="searched" placeholder="Looking for something?">
+      </form>
+    </li>
+  </ul>
+</nav>
+
+<!--Parallax div there. Parallax Tutorial learned from W3schools. URL in report.-->
+<div class="parallax"></div>
+<section>
+  <div class="featureimage"> <img src="images/homepageimages/homepage_feature_image_3.jpg" width="960" height="460" alt=""/> </div>
+</section>
+
+<!-- Creating a gallery of feature images to promote the brand. Put the pseudo-class 'hover' and some box shadows in CSS to give it a bit more dynamism. -->
+<section>
+  <div class="parallax"></div>
+  <div class="featuregallery">
+    <figure class="featuregalleryimage"> <img class="featuregalleryimageborder" src="images/homepageimages/feature_ethical_sourcing.jpg" width="300" height="300" alt=""/> </figure>
+    <figure class="featuregalleryimage"> <img src="images/homepageimages/feature_logo.jpg" width="300" height="300" alt=""/></figure>
+    <figure class="featuregalleryimage"> <img class="featuregalleryimageborder" src="images/homepageimages/feature_perfect_roast.jpg" width="300" height="300" alt=""/> </figure>
+  </div>
+</section>
+<div class="parallax"></div>
+
+<!--Using a W3schools tutorial on how to make a popup. URL in report. I changed it around a lot to fit in with the rest of the footer elements. Putting it there as a "fun fact of the day" thing. I also gave it a bordered background, that was styled in CSS. -->
+
+<footer>
+  <div class="coffeepopupbg">
+    <div class="coffeepopup" onclick="popupFunction()" type=""> <strong> CLICK HERE FOR COFFEE FACT OF THE DAY!</strong> <span class="coffeepopuptext" id="mycoffeepopup"> Kopi Luwak, one of the most expensive coffees in the world, is made from toddy cat excrement. </span> </div>
+  </div>
+  <!-- Footer navigation bar. This was basically the same as the top navigation bar, expect it also links to social media sites-->
+  <ul class="footnav">
+    <li class="footnavlist"><a class="footnavlink" href="html/aboutpage.html">About</a></li>
+    <li class="footnavlist"><a class="footnavlink" href="html/contactpage.html">Contact</a></li>
+    <li class="footnavlist"><a class="footnavlink" href="javascript:void(0);">Dana Law &#9749</a></li>
+    <li class="footnavlist"><a class="footnavlink" href="https://www.facebook.com/pages/Coffee/103758506330178?fref=ts;"><img src="images/homepageimages/fb_icon.png" width="20" height="20" alt=""/></a></li>
+    <li class="footnavlist"><a class="footnavlink" href="https://twitter.com/coffee_dad?lang=en"><img src="images/homepageimages/twitter_icon.jpg" width="20" height="20" alt=""/></a></li>
+  </ul>
+</footer>
+</body>
+</html>
